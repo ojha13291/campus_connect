@@ -112,14 +112,12 @@ export default function Events() {
           </div>
           
           <div className="flex flex-col lg:flex-row gap-6">
-            {/* Filters for desktop */}
             <div className="hidden lg:block w-64 shrink-0">
               <div className="sticky top-20">
                 <FiltersContent />
               </div>
             </div>
             
-            {/* Main content */}
             <div className="flex-1">
               <div className="flex flex-col sm:flex-row gap-3 mb-6">
                 <SearchBar 
@@ -129,7 +127,6 @@ export default function Events() {
                   className="flex-1"
                 />
                 
-                {/* Mobile filters */}
                 <Sheet>
                   <SheetTrigger asChild>
                     <Button variant="outline" className="lg:hidden flex gap-2">

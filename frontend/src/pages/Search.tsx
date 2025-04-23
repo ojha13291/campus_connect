@@ -15,7 +15,6 @@ export default function Search() {
   const [activeTab, setActiveTab] = useState("all");
   const isMobile = useIsMobile();
   
-  // Filter events based on search query
   const filteredEvents = events.filter(event => 
     event.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
     event.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -23,17 +22,14 @@ export default function Search() {
     event.category.toLowerCase().includes(searchQuery.toLowerCase())
   );
   
-  // Filter clubs based on search query
   const filteredClubs = clubs.filter(club => 
     club.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
     club.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
     club.category.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
-  // For "All" tab, create a mixed array of events and clubs
   const allResults = [...filteredEvents, ...filteredClubs];
   
-  // Update document title when search query changes
   useEffect(() => {
     document.title = searchQuery ? `Search: ${searchQuery} - Campus Connect` : "Search - Campus Connect";
   }, [searchQuery]);

@@ -13,13 +13,10 @@ import { clubs } from "@/data/clubs";
 import { ClubCard } from "@/components/ClubCard";
 
 export default function Index() {
-  // Get the current date
   const currentDate = new Date();
   
-  // Filter upcoming events (events after current date)
   const upcomingEvents = events.slice(0, 3);
   
-  // Featured clubs (first 3)
   const featuredClubs = clubs.slice(0, 3);
   
   return (

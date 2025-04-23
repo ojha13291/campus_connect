@@ -17,7 +17,6 @@ export default function ClubDetails() {
   const { toast } = useToast();
   
   useEffect(() => {
-    // Scroll to top when component mounts
     window.scrollTo(0, 0);
     
     // Check local storage for following status
@@ -27,7 +26,6 @@ export default function ClubDetails() {
   
   const handleFollowToggle = () => {
     if (isFollowing) {
-      // Unfollow
       const followedClubs = JSON.parse(localStorage.getItem("followedClubs") || "[]");
       const updatedClubs = followedClubs.filter((clubId: string) => clubId !== id);
       localStorage.setItem("followedClubs", JSON.stringify(updatedClubs));
@@ -38,7 +36,6 @@ export default function ClubDetails() {
         description: "You've unfollowed this club.",
       });
     } else {
-      // Follow
       const followedClubs = JSON.parse(localStorage.getItem("followedClubs") || "[]");
       followedClubs.push(id);
       localStorage.setItem("followedClubs", JSON.stringify(followedClubs));

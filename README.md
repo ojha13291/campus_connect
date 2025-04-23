@@ -1,17 +1,17 @@
 <h1>Campus Connect Web Portal</h1>
 
- Campus Connect is a fully responsive web portal developed during Teleposium 3.0, hosted by SIR MVIT College, Bengaluru. Our team of 4 members successfully built this frontend application in just 
- 3 hours, creating a platform to connect campus communities.
+   Campus Connect is a fully responsive web portal developed during Teleposium 3.0, hosted by SIR MVIT College, Bengaluru. Our team of 4 members successfully built this frontend application in 
+   just 3 hours, creating a platform to connect campus communities.
 
 
 
- !Campus Connect
+    !Campus Connect
 
 
 
 <h3>🚀 Live Demo</h3>
 
- Check out the live site: <a href="https://smvit-campus-connect.vercel.app/">SMVIT Campus Connect</a>
+  Check out the live site: <a href="https://smvit-campus-connect.vercel.app/">SMVIT Campus Connect</a>
 
 
 
@@ -31,22 +31,22 @@
 
 <h3>✨ Features</h3>
 
- -Fully responsive design for all device sizes
+  -Fully responsive design for all device sizes
 
- -Modern UI with shadcn-ui components
+  -Modern UI with shadcn-ui components
 
- -Fast performance with Vite
+  -Fast performance with Vite
 
- -Type-safe code with TypeScript
+  -Type-safe code with TypeScript
 
- -Clean and maintainable codebase
+  -Clean and maintainable codebase
 
 
 
 <h3>🏆 Hackathon Achievement</h3>
 
- This project was developed during Teleposium 3.0, a hackathon hosted by SIE MVIT College, Bengaluru. Our team completed the entire project in just 3 hours, demonstrating rapid development skills 
- and effective teamwork.
+  This project was developed during Teleposium 3.0, a hackathon hosted by SIE MVIT College, Bengaluru. Our team completed the entire project in just 3 hours, demonstrating rapid development skills 
+  and effective teamwork.
 
 
 
@@ -78,28 +78,29 @@
 
  1. Clone the repository
 
-  git clone https://github.com/ojha13291/campus_connect.git
-  cd campus_connect
+     git clone https://github.com/ojha13291/campus_connect.git
+     cd campus_connect
 
 
 
 2. Install dependencies
 
- npm install
-  or
- yarn install
+
+   npm install
+     or
+   yarn install
 
 
 
-3. Start the development server
+4. Start the development server
 
- npm run dev
-  or
- yarn dev
+    npm run dev
+     or
+    yarn dev
 
 
 
-4. Open your browser and navigate to http://localhost:8080
+5. Open your browser and navigate to http://localhost:8080
 
 
 

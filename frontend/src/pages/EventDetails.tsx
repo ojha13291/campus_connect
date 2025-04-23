@@ -18,17 +18,13 @@ export default function EventDetails() {
   const { toast } = useToast();
   
   useEffect(() => {
-    // Scroll to top when component mounts
     window.scrollTo(0, 0);
-    
-    // Check local storage for registration
     const registeredEvents = JSON.parse(localStorage.getItem("registeredEvents") || "[]");
     setIsRegistered(registeredEvents.includes(id));
   }, [id]);
   
   const handleRegistration = () => {
     if (isRegistered) {
-      // Unregister
       const registeredEvents = JSON.parse(localStorage.getItem("registeredEvents") || "[]");
       const updatedEvents = registeredEvents.filter((eventId: string) => eventId !== id);
       localStorage.setItem("registeredEvents", JSON.stringify(updatedEvents));
@@ -39,7 +35,6 @@ export default function EventDetails() {
         description: "You've been removed from this event.",
       });
     } else {
-      // Register
       const registeredEvents = JSON.parse(localStorage.getItem("registeredEvents") || "[]");
       registeredEvents.push(id);
       localStorage.setItem("registeredEvents", JSON.stringify(registeredEvents));
@@ -62,7 +57,6 @@ export default function EventDetails() {
         console.error('Could not share', err);
       });
     } else {
-      // Fallback for browsers that don't support navigator.share
       navigator.clipboard.writeText(window.location.href);
       toast({
         title: "Link copied!",
@@ -71,7 +65,6 @@ export default function EventDetails() {
     }
   };
 
-  // Get related events (same category, excluding current)
   const relatedEvents = events
     .filter(e => e.category === event?.category && e.id !== id)
     .slice(0, 3);

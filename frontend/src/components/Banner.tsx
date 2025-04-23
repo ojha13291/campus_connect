@@ -38,7 +38,7 @@ const bannerContents: BannerContent[] = [
     cta: "Explore Clubs",
     link: "/clubs",
     image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    bgColor: "from-violet-600 to-purple-800"
+    bgColor: "from-violet-600 to-orange-800"
   }
 ];
 

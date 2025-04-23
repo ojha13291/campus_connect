@@ -120,7 +120,7 @@ export const clubs: Club[] = [
     meetingSchedule: "Thursdays, 6:30 PM",
     location: "Arts Center, Room 210",
     logo: "/placeholder.svg",
-    coverImage: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+    coverImage: "https://images.unsplash.com/photo-1571745612875-6b66ea516a0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
     social: {
       instagram: "ssclub",
       facebook: "sportsclub",

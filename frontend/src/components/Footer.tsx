@@ -65,20 +65,20 @@ export function Footer() {
             </ul>
           </div>
           
-          <div>
-            <h3 className="text-lg font-semibold mb-3">Contact</h3>
-            <ul className="space-y-2">
-              <li className="text-sm text-muted-foreground">
-                University Campus, Main Building
-              </li>
-              <li className="text-sm text-muted-foreground">
-                Email: campus.connect@university.edu
-              </li>
-              <li className="text-sm text-muted-foreground">
-                Phone: (123) 456-7890
-              </li>
-            </ul>
-          </div>
+         <div>
+  <h3 className="text-lg font-semibold mb-3">Contact</h3>
+  <ul className="space-y-2">
+    <li className="text-sm text-muted-foreground">
+      University Campus, Main Building
+    </li>
+    <li className="text-sm text-muted-foreground">
+      Email: <a href="mailto:campus.connect@university.edu" className="hover:underline">campus.connect@university.edu</a>
+    </li>
+    <li className="text-sm text-muted-foreground">
+      Phone: <a href="tel:1234567890" className="hover:underline">(123) 456-7890</a>
+    </li>
+  </ul>
+</div>
         </div>
         
         <div className="border-t mt-8 pt-8 flex flex-col md:flex-row items-center justify-between">
